@@ -1,4 +1,3 @@
-# for Mcgill's Trottier computers
 # .bashrc
 
 # Source global definitions
@@ -13,4 +12,6 @@ alias launchy="roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=wor
 alias anotherSourcy="source devel/setup.bash"
 
 alias runy="rosrun bugger turtle"
+alias runny="rosrun bugger bug _goal_x:=10.0 _goal_y:=15.0"
+alias unitRunny="rosrun bugger bug _goal_x:=-1.0 _goal_y:=-1.0"
 #velocity and motor
