@@ -9,7 +9,8 @@ fi
 #these commands are for being able to actual run the whole thing
 alias sourcy="source /opt/ros/indigo/setup.bash"
 alias launchy="roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=worlds/willowgarage.world"
-alias anotherSourcy="source devel/setup.bash"
+alias anotherSourcy="source devel/setup.bash" #you have to be in your project folder for this to work
+
 
 alias runy="rosrun bugger turtle"
 alias runny="rosrun bugger bug _goal_x:=10.0 _goal_y:=15.0"
