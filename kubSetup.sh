@@ -42,4 +42,8 @@ sudo apt-get install kubeadm
 #export PATH=$PATH:/usr/bin/etcd:/usr/bin/go
 
 #Ready to go
-#--minikube start --vm-version none
+#--minikube start --vm-driver none
+
+#if error run the following
+#minikube stop
+#minikube delete
