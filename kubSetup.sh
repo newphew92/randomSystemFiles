@@ -43,6 +43,7 @@ base=https://github.com/docker/machine/releases/download/v0.14.0 && curl -L $bas
 
 #copy pasta this into .bashrc
 #export PATH=$PATH:/usr/bin/etcd:/usr/bin/go
+#export CHANGE_MINIKUBE_NONE_USER=true
 
 #Ready to go
 #--minikube start --vm-driver none
