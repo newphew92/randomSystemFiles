@@ -26,5 +26,14 @@ apt-get install -y kubectl
 #minikube
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.26.1/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 
-#virtualbox
-sudo apt-get install virtualbox
+#virtualbox, not useful on ubuntu since we'll run kubernetes directly
+#sudo apt-get install virtualbox
+
+#etcd
+sudo apt-get install etcd
+
+#golang
+sudo apt-get install golang-go
+
+#copy pasta this into .bashrc
+#export PATH=$PATH:/usr/bin/etcd:/usr/bin/go
