@@ -27,10 +27,4 @@ apt-get install -y kubectl
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.26.1/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 
 #virtualbox
-sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian `lsb_release -cs` contrib"
-
-wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
-
-sudo apt-get update
-sudo apt-get install virtualbox-5.2
+sudo apt-get install virtualbox
