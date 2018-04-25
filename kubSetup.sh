@@ -35,5 +35,11 @@ sudo apt-get install etcd
 #golang
 sudo apt-get install golang-go
 
+#kubeadm
+sudo apt-get install kubeadm
+
 #copy pasta this into .bashrc
 #export PATH=$PATH:/usr/bin/etcd:/usr/bin/go
+
+#Ready to go
+#--minikube start --vm-version none
