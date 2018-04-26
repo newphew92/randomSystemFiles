@@ -41,6 +41,10 @@ sudo apt-get install kubeadm
 #docker machine
 base=https://github.com/docker/machine/releases/download/v0.14.0 && curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine && sudo install /tmp/docker-machine /usr/local/bin/docker-machine
 
+#Agones
+minikube profile agones
+kubectl apply -f https://raw.githubusercontent.com/googlecloudplatform/agones/release-0.1/install.yaml
+
 #copy pasta this into .bashrc
 #export PATH=$PATH:/usr/bin/etcd:/usr/bin/go
 #export CHANGE_MINIKUBE_NONE_USER=true
