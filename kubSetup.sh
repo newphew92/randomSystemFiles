@@ -43,7 +43,7 @@ base=https://github.com/docker/machine/releases/download/v0.14.0 && curl -L $bas
 
 #Agones
 minikube profile agones
-kubectl apply -f https://raw.githubusercontent.com/googlecloudplatform/agones/release-0.1/install.yaml
+sudo kubectl apply -f https://raw.githubusercontent.com/googlecloudplatform/agones/release-0.1/install.yaml
 
 #copy pasta this into .bashrc
 #export PATH=$PATH:/usr/bin/etcd:/usr/bin/go
