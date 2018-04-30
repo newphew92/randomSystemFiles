@@ -1,8 +1,12 @@
-Run the commands in kubSetup.sh
+#This isn't a bash script but I'm preserving the syntax for increased legibility
+#Run the commands in kubSetup.sh
 
-paste the following in ~root/.bashrc
+#paste the following in ~root/.bashrc
 
 alias miniclean='minikube stop;minikube delete;service etcd stop;kubeadm reset'
 
 #replace the proxy url
 alias ministart='miniclean;swapoff -a;minikube start --vm-driver=none -docker-env HTTPS_PROXY=http://proxy-server.org
+
+#your machine needs to be in root given that we aren't using a vm to launch minikube
+sudo su
