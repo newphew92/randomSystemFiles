@@ -1,0 +1,8 @@
+Run the commands in kubSetup.sh
+
+paste the following in ~root/.bashrc
+
+alias miniclean='minikube stop;minikube delete;service etcd stop;kubeadm reset'
+
+#replace the proxy url
+alias ministart='miniclean;swapoff -a;minikube start --vm-driver=none -docker-env HTTPS_PROXY=http://proxy-server.org
