@@ -50,7 +50,10 @@ sudo kubectl apply -f https://raw.githubusercontent.com/googlecloudplatform/agon
 #export CHANGE_MINIKUBE_NONE_USER=true
 
 #Ready to go
-#--minikube start --vm-driver none
+#alias ministart='miniclean;swapoff -a;minikube start --kubernetes-version v1.9.0 --vm-driver=none \
+#--extra-config=apiserver.admission-control="NamespaceLifecycle,LimitRanger,ServiceAccount,PersistentVolumeLabel,DefaultStorageClass,DefaultTolerationSeconds,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota" \
+#;minikube profile agones'
+
 
 #if error run the following
 #minikube stop
