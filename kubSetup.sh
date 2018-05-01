@@ -23,8 +23,8 @@ EOF
 apt-get update
 apt-get install -y kubectl
 
-#minikube
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.26.1/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+#minikube, DO NOT USE 0.26.x, it has problems!
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.2/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 
 #virtualbox, not useful on ubuntu since we'll run kubernetes directly
 #sudo apt-get install virtualbox
