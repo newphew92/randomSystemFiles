@@ -6,7 +6,10 @@
 alias miniclean='minikube stop;minikube delete;service etcd stop;kubeadm reset'
 
 #replace the proxy url
-alias ministart='miniclean;swapoff -a;minikube start --vm-driver=none -docker-env HTTPS_PROXY=http://proxy-server.org;minikube profile agones
+alias ministart='miniclean;swapoff -a;minikube start --kubernetes-version v1.9.0 --vm-driver=none \
+--extra-config=apiserver.admission-control="NamespaceLifecycle,LimitRanger,ServiceAccount,PersistentVolumeLabel,DefaultStorageClass,DefaultTolerationSeconds,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota" \
+;minikube profile agones'
+
 
 #your machine needs to be in root given that we aren't using a vm to launch minikube
 sudo su
