@@ -13,7 +13,7 @@ alias rbacInstall='kubectl create clusterrolebinding cluster-admin-binding \
 
 #replace the proxy url
 alias ministart='minikube profile agones; \
-minikube start --kubernetes-version v1.9.0 --vm-driver=none \
+minikube start --kubernetes-version v1.9.4 --vm-driver=none \
 --extra-config=apiserver.Admission.PluginNames=NamespaceLifecycle,LimitRanger,ServiceAccount,PersistentVolumeLabel,DefaultStorageClass,DefaultTolerationSeconds,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota'
 
 #Agones
